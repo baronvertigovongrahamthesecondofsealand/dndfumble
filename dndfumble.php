@@ -139,8 +139,8 @@
                 [
                     'low'    => 15,
                     'high'   => 19,
-                    'desc'   => "Melee: You get tangled with your enemy and fall over.",
-                    'effect' => "Ranged: You spill your quiver. 	Melee: You are knocked prone and your movement is reduced to 0. Your target must succeed a DC 10 dexterity check or they are also knocked prone. Ranged: You must pick up arrows individually from the ground using your \"environmental interaction\", or the \"Use an Object\" action to nock your bow."
+                    'desc'   => "Melee: You get tangled with your enemy and fall over\nRanged: You spill your quiver.",
+                    'effect' => "Melee: You are knocked prone and your movement is reduced to 0. Your target must succeed a DC 10 dexterity check or they are also knocked prone.\nRanged: You must pick up arrows individually from the ground using your \"environmental interaction\", or the \"Use an Object\" action to nock your bow."
                 ],
                 [
                     'low'    => 20,
@@ -169,14 +169,14 @@
                 [
                     'low'    => 60,
                     'high'   => 69,
-                    'desc'   => "Melee: The weapon slips from your hand as you attack.",
-                    'effect' => "Ranged: Your ammunition gets lodged in its container. 	Melee: Roll a DC 10 Dexterity Check, on failure you throw your weapon into your enemy's space. DM determines where the item is thrown on large sized or greater creatures. Ranged: You must use an action to organize the ammunition in its case before you can make another ranged attack."
+                    'desc'   => "Melee: The weapon slips from your hand as you attack.\nRanged: Your ammunition gets lodged in its container.",
+                    'effect' => "Melee: Roll a DC 10 Dexterity Check, on failure you throw your weapon into your enemy's space. DM determines where the item is thrown on large sized or greater creatures.\nRanged: You must use an action to organize the ammunition in its case before you can make another ranged attack."
                 ],
                 [
                     'low'    => 70,
                     'high'   => 79,
-                    'desc'   => "Melee: You lunge past an enemy exposing yourself to his attack.",
-                    'effect' => "Ranged: Your missile startles your allies near your target. 	Melee: Enemy you were attacking is able to use their reaction to perform and attack of opportunity. Ranged: the target can perform an opportunity attack on any ally within melee range."
+                    'desc'   => "Melee: You lunge past an enemy exposing yourself to his attack.\nRanged: Your missile startles your allies near your target.",
+                    'effect' => "Melee: Enemy you were attacking is able to use their reaction to perform and attack of opportunity.\nRanged: the target can perform an opportunity attack on any ally within melee range."
                 ],
                 [
                     'low'    => 80,
@@ -463,8 +463,8 @@
                     ?>
 
                     Roll: <?=$roll?><br />
-                    <strong><?=$criteffect['desc']?></strong><br />
-                    <em><?=$criteffect['effect']?></em><br />
+                    <strong><?=nl2br($criteffect['desc'])?></strong><br />
+                    <em><?=nl2br($criteffect['effect'])?></em><br />
                 </div>
             <?php endforeach; ?>
             </div>
