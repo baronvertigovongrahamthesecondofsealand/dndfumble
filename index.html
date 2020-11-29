@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+    <title>D&D crit/fumble generator!</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="row" style="margin: 50px auto;">
+        <div class="col text-center">
+            <form method="get">
+                <label for="roll"><h3>Enter a new roll (or leave blank for random)</h3></label><br />
+                <input id="roll" type="number" name="roll" value="" min="1" max="100" style="text-align: center; width: 90px; font-weight: bold; font-size: 35px;" />
+                <button class="btn" style="transform: translateY(-8px); height: 65px; width: 100px; font-weight: bold; font-size: 35px;">Roll</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="attack-types">
+
+    </div>
+</div>
+
+<div class="placehold" style="display: none;">
+
+    <div class="attack-type row" style="margin: 50px auto 50px;">
+        <div class="col">
+            <h1 style="border-bottom: 1px solid;">
+                <img src="icon_weapon.png" style="width: 50px; margin: 0 0 10px;" />
+                <span class="type-name">-</span>s
+            </h1>
+
+            <div class="result-types row"></div>
+        </div>
+    </div>
+
+    <div class="result-type col">
+        <h2>
+            <img src="icon_crit.png" style="width: 50px; margin: 0 0 10px;" />
+            <span class="type-name">-</span>
+        </h2>
+
+        <p>Roll: <span class="roll-result">-</span></p>
+        <p><strong class="roll-result-desc">-</strong></p>
+        <p><em class="roll-result-effect">-</em></p>
+    </div>
+
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</body>
+</html>
